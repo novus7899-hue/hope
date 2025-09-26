@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- loader section -->
+
+    <div class="loader-wrapper">
+      <div class="dot-container">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+      </div>
+    </div>
+    <!-- hero section -->
+
+    <section class="hero-section">
+      <nav class="navbar">
+        <p class="logo-name">AD<span class="ad-passion">Photographer</span></p>
+        <ul class="side-bar nav-list">
+          <li onclick="HideSideBar()" class="list-item cross">
+            <a href=""
+              ><a class="cross" href="#"
+                ><img src="/images/icons/icons8-cross-20 (1).png" /></a
+            ></a>
+          </li>
+          <li class="list-item"><a href="">HOME</a></li>
+          <li class="list-item"><a href="">PORTFOLIO</a></li>
+          <li class="list-item"><a href="">GALLERY</a></li>
+          <li class="list-item"><a href="">ABOUT US</a></li>
+          <li class="list-item"><a href="">CONTACT</a></li>
+        </ul>
+        <ul class="nav-list NonSideBar">
+            <li onclick="ShowSideBar()" class="menu list-item">
+            <a class="menu" href="#"
+              ><img src="/images/icons/icons8-menu-20.png" alt=""
+            /></a>
+          </li>
+          <li class="list-item ss1"><a href="">HOME</a></li>
+          <li class="list-item ss1"><a href="">PORTFOLIO</a></li>
+          <li class="list-item ss1"><a href="">GALLERY</a></li>
+          <li class="list-item ss1" ><a href="">ABOUT US</a></li>
+          <li class="list-item ss1"><a href="">CONTACT</a></li>
+          
+        </ul>
+
+        <div class="icons">
+          <a class="insta-logo" href="">
+            <img src="/images/icons/icons8-instagram-20.png" alt=""
+          /></a>
+          <a class="facebook-logo" href="">
+            <img src="/images/icons/icons8-facebook-20.png" alt=""
+          /></a>
+        </div>
+      </nav>
+    </section>
+    <script src="showsidebar.js"></script>
+    <script src="heroImageslider.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").slideUp(1500);
+        $(".hero-section").fadeIn(1500);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@font-face {
+    font-family: muli;
+    src: url(/fonts/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: america;
+    src: url(/fonts/American\ Captain.otf);
+}
+@font-face {
+    font-family: marvel;
+    src: url(/fonts/MarvelRegular-Dj83.ttf);
+}
+/* hero section */
+
+.hero-section{
+      background-image: url(/images/hero-images/3.webp);
+  width: 100vw;
+  height: 100vh;
+  
+ background-repeat: no-repeat;
+
+ background-repeat: no-repeat;
+ background-size: cover;
+ animation: change 10s infinite  ease-in-out;
+    
+}
+.list-item a {
+    font-family: muli;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between ;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+}
+.nav-list{
+    display: flex;
+    list-style:none;
+    gap: 50px;
+  
+}
+.logo-name{
+    font-family: marvel;
+    color: white;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   animation: logo-ani2 1s linear;
+    font-size: 25px;
+}
+.logo-name span{
+ font-family: muli;
+
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 3px;
+    animation: logo-ani1 1s linear ;
+   
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+/* nav elements animation */
+
+
+.list-item a {
+  text-decoration: none;
+  transition: 0.4s;
+  position: relative;
+}
+
+.list-item a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  
+  left: 0;
+  top: 15px;
+  transition: width 0.4s;
+}
+
+.list-item a:hover::before {
+  width: 100%;
+}
+.menu{
+    display: none;
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+    display: none;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    
+}
+.side-bar li{
+    width: 100%;
+    
+}
+.side-bar li a{
+   /* color: black; */
+   width: 100%;
+    
+}
+
+/* website logo animation */
+
+
+@keyframes logo-ani1 {
+    from{
+        transform: translateX(100px);
+        opacity: 0%;
+
+    }
+    to{
+opacity: 100%;
+    }
+}
+
+@keyframes logo-ani2 {
+     from{
+        transform: translateX(-100px);
+        opacity: 0%;
+
+    }
+    to{
+opacity: 100%;
+    }
+}
+
+/* navbar responsiveness */
+
+
+@media (max-width:1470px) {
+    .nav-list{
+    
+    gap: 40px;
+  
+}
+}
+@media (max-width:1185px) {
+   .list-item a {
+   
+    font-size: 9px;
+  
+}
+}
+@media (max-width:940px) {
+  
+.menu{
+    display:block;
+}
+.insta-logo{
+    display: none;
+}
+.facebook-logo{
+    display: none;
+}
+.ss1{
+    display:none;
+}
+.menu{
+    display: block;
+    float: right;
+}
+.NonSideBar{
+   display: flex;
+   position: relative;
+right: -300px;   
+  
+}
+}
+@media (max-width:800px) {
+    .NonSideBar{
+ 
+   
+right: -250px;   
+  
+}
+}
+@media (max-width:700px) {
+    .NonSideBar{
+ 
+   
+right: -200px;   
+  
+}
+}
+@media (max-width:600px) {
+    .NonSideBar{
+ 
+   
+right: -150px;   
+  
+}
+}
+@media (max-width:500px) {
+    .NonSideBar{
+ 
+   
+right: -100px;   
+  
+}
+}
+@media (max-width:415px) {
+    .NonSideBar{
+ 
+   
+right: -80px;   
+  
+}
+.logo-name{
+    font-size: 20px;
+}
+.side-bar{
+    width: 100%;
+}
+}
+@media (max-width:350px) {
+   
+.logo-name{
+    left: -30px;
+    font-size: 20px;
+    position: relative;
+}
+}
+@media (max-width:340px) {
+   
+.NonSideBar{
+right: -60px;     
+}
+}
+@media (max-width:300px) {
+   
+.NonSideBar{
+right: -50px;     
+}
+}
+@media (max-width:285px) {
+   
+.NonSideBar{
+right: -40px;     
+}
+.logo-name{
+    font-size: 15px;
+}
+.logo-name span{
+    font-size: 11px;
+}
+
+}
+
+/* navbar responsive done */
