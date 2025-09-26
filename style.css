@@ -6,20 +6,20 @@
 /* fonts */
 @font-face {
     font-family: muli;
-    src: url(/fonts/Muli-Regular.ttf);
+    src: url(Muli-Regular.ttf);
 }
 @font-face {
     font-family: america;
-    src: url(/fonts/American\ Captain.otf);
+    src: url(American\ Captain.otf);
 }
 @font-face {
     font-family: marvel;
-    src: url(/fonts/MarvelRegular-Dj83.ttf);
+    src: url(MarvelRegular-Dj83.ttf);
 }
 /* hero section */
 
 .hero-section{
-      background-image: url(/images/hero-images/3.webp);
+      background-image: url(/3.webp);
   width: 100vw;
   height: 100vh;
   
